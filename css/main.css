@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --black-lighter: #333;
+  --primary-btn: #ff5361;
+}
+
+/*  Buttons */
+.register-btn {
+  background: var(--white);
+  color: var(--black);
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.container {
+  padding: 0px 7%;
+}
+
+.sub-title {
+  margin: 50px 0px 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: var(--black-lighter);
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  /*  nav */
+  /*  search-bar */
+}
+
+.header .logo {
+  width: 115px;
+  cursor: pointer;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+}
+
+.header .nav__links li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.header .nav__links li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: var(--white);
+  text-align: center;
+  padding-top: 32%;
+}
+
+.header .search-bar {
+  background: var(--white);
+  width: 70%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 30px;
+  /*  form */
+}
+
+.header .search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /*  button */
+}
+
+.header .search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.header .search-bar form button {
+  background: var(--primary-btn);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.header .search-bar form button img {
+  width: 15px;
+  margin-top: 7px;
+}
+
+.header .search-bar form label {
+  font-weight: 600;
+}
+
+.header .search-bar form .location-input {
+  flex: 1;
+}
+
+/*  header */
+.exclusives {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.exclusives div img {
+  width: 100%;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */

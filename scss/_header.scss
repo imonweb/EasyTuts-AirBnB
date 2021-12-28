@@ -1,0 +1,87 @@
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+
+  .logo {
+    width: 115px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+
+    &__links {
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px 30px;
+
+        a {
+          text-decoration: none;
+          color: var(--white);
+        }
+      }
+    }
+    
+  } /*  nav */
+
+  h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    padding-top: 32%;
+  }
+
+  .search-bar {
+    background: var(--white);
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 30px;
+
+    form {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      input {
+        display: block;
+        border: 0;
+        outline: none;
+        background: transparent;
+      }
+
+      button {
+        background: var(--primary-btn);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+
+        img {
+          width: 15px;
+          margin-top: 7px;
+        }
+      } /*  button */
+
+      label {
+        font-weight: 600;
+      }
+
+      .location-input {
+        flex: 1;
+      }
+    } /*  form */
+  } /*  search-bar */
+ 
+} /*  header */
